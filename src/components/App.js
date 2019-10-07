@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
-import profile from './assets/profile.jpg';
-
+import profile from '../assets/profile.jpg';
+import Title from './Title';
+import Header from './Header';
 
 class App extends Component {
-    state= {
+    state = {
         displayBio: false
        };
 
@@ -19,7 +20,8 @@ class App extends Component {
             <div>
                 <img src={profile} alt='profile' className='profile'/>
                 <h1>Hello</h1>
-                <p>My name is Apoorva. I want to become a great sofware engineer.</p>
+                <p>My name is Apoorva.</p>
+                <Title/>
                 <p>I am always looking forward to work on meaningful projects.</p>
                 
                 {
